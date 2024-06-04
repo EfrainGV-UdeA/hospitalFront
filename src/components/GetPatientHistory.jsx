@@ -14,10 +14,10 @@ const GetPatientHistory = () => {
   const fetchHistory = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/patient-history/${cedula}`,
+        `http://localhost:8089/get-patient-by-identification/${cedula}`,
         {
           headers: {
-            Accept: "app/historiaclinica.${cedula}.v1+json",
+            Accept: "application/vnd.patient.v1+json",
           },
         }
       );

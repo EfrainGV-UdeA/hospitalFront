@@ -39,7 +39,7 @@ const PostPatientHistory = () => {
         formData,
         {
           headers: {
-            Accept: "application/vnd.myapi.v1+json",
+            Accept: "application/vnd.patient.v1+json",
           },
         }
       );
